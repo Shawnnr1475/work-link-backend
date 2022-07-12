@@ -29,6 +29,10 @@ const clientTemp = new clientSchema({
     password:{
         type: String,
         require:true
+    },
+    date:{
+        type:Date,
+        default:Date.now()
     }
 })
 

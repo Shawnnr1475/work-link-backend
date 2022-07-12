@@ -7,6 +7,7 @@ const PORT = 5000
 const cors = require("cors")
 const bodyParser = require("body-parser")
 const ClientRoutes = require("./routers/clientroutes")
+const ExpertRoutes = require("./routers/expertroutes")
 
  
 mongoose.connect(process.env.DATABASE_ACCESS,()=>{
@@ -17,6 +18,8 @@ mongoose.connect(process.env.DATABASE_ACCESS,()=>{
 app.use(cors())
 app.use(bodyParser.json())
 app.use(ClientRoutes)
+app.use(ExpertRoutes)
+
 
 
 app.listen(process.env.PORT || PORT,()=>{console.log(`Listening at port ${PORT}`)})

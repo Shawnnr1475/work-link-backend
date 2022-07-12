@@ -1,4 +1,6 @@
-POST http://localhost:5000/newclient
+# GET http://localhost:5000/clients
+
+POST http://localhost:5000/newexpert
 content-type: application/json
 
 {
@@ -10,3 +12,6 @@ content-type: application/json
     "password":"67849934",
     "cell":"06784993904"
 }
+
+
+
