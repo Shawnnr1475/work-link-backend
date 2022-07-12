@@ -39,7 +39,7 @@ Router.get("/experts",async(req,res)=>{
 })
 
 // Create new Expert
-Router.post("/signup-expert", upload.single("profilepic"), async (req,res)=>{
+Router.post("/signup/expert", upload.single("profilepic"), async (req,res)=>{
 
     //Check if the email exists
     const checkEmail = await Expert.findOne({email:req.body.email})

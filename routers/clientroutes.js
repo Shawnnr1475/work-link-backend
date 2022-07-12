@@ -32,7 +32,7 @@ Router.get("/client:id",async(req,res)=>{
 })
 
 // Create new Client
-Router.post("/newclient", async (req,res)=>{
+Router.post("/signup/client", async (req,res)=>{
 
     //Check if the email exists
     const checkEmail = await Expert.findOne({email:req.body.email})

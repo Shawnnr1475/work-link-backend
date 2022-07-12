@@ -1,6 +1,6 @@
-# GET http://localhost:5000/clients
+# GET https://work-link-backend.herokuapp.com/signup-expert
 
-POST http://localhost:5000/newexpert
+POST https://work-link-backend.herokuapp.com/signup/expert
 content-type: application/json
 
 {
