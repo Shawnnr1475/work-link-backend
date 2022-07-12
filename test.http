@@ -1,0 +1,12 @@
+POST http://localhost:5000/newclient
+content-type: application/json
+
+{
+    "name": "Shawn",
+    "surname": "Radebe",
+    "email": "radebeshawn@gmail.com",
+    "address": "142536 Ybsdbds uifeureui",
+    "coordinates": [20,30],
+    "password":"67849934",
+    "cell":"06784993904"
+}
